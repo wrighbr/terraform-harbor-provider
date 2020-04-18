@@ -37,6 +37,7 @@ func Provider() terraform.ResourceProvider {
 			"harbor_project_member": resourceMembers(),
 			"harbor_tasks":          resourceTasks(),
 			"harbor_robot_account":  resourceRobotAccount(),
+			"harbor_registry":       resourceRegistry(),
 		},
 
 		ConfigureFunc: providerConfigure,
